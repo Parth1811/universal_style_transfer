@@ -24,8 +24,8 @@ def tensor_to_image(tensor):
   return PIL.Image.fromarray(tensor)
 
 
-content_path = './iitb.jpg'
-style_path = './style4.jpg'
+content_path = './profile3.jpg'
+style_path = './style2.jpg'
 
 def load_img(path_to_img):
   max_dim = 512
@@ -223,7 +223,7 @@ for n in range(epochs):
     print(".", end='')
 
   jpg_image = tensor_to_image(image)
-  jpg_image.save("iitb_2/iter_" + str(step) + ".jpg")
+  jpg_image.save("profile3_2/iter_" + str(step) + ".jpg")
   print("Train step: {}".format(step))
 
 end = time.time()
